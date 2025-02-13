@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideal Car Profile - Car Finders Inc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        header img {
+            vertical-align: middle;
+            width: 50px;
+            margin-right: 10px;
+        }
+        h1 {
+            display: inline;
+        }
+        form {
+            width: 50%;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        select, input[type="text"], input[type="color"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://via.placeholder.com/50" alt="Car Finders Inc Logo">
+    <h1>Ideal Car Profile</h1>
+</header>
+
+<form method="GET" action="your-action-url">
+    <fieldset>
+        <legend>Car Details</legend>
+
+        <label for="manufacturer">Manufacturer:</label>
+        <select id="manufacturer" name="manufacturer">
+            <option value="toyota">Toyota</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Honda</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+        </select>
+
+        <label for="colour">Colour:</label>
+        <input type="color" id="colour" name="colour">
+
+        <label>Drive Options:</label>
+        <input type="checkbox" id="four-wheel" name="drive" value="4-wheel">
+        <label for="four-wheel">4 Wheel Drive</label>
+        <input type="checkbox" id="front-wheel" name="drive" value="front-wheel">
+        <label for="front-wheel">Front Wheel Drive</label>
+        <input type="checkbox" id="rear-wheel" name="drive" value="rear-wheel">
+        <label for="rear-wheel">Rear Wheel Drive</label>
+
+        <label for="license">License Plate:</label>
+        <input type="text" id="license" name="license">
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Preferences</legend>
+
+        <label for="sunroof">Sunroof:</label>
+        <input type="checkbox" id="sunroof" name="sunroof" value="yes">
+        <label for="sunroof">Yes</label>
+
+        <label for="leather-seats">Leather Seats:</label>
+        <input type="checkbox" id="leather-seats" name="leather-seats" value="yes">
+        <label for="leather-seats">Yes</label>
+
+        <label for="navigation">Navigation System:</label>
+        <input type="checkbox" id="navigation" name="navigation" value="yes">
+        <label for="navigation">Yes</label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
